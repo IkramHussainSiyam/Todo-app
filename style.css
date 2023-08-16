@@ -195,4 +195,16 @@ body {
   .todoApp {
     max-width: auto;
   }
+  .updateStatus {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3rem;
+    row-gap: 1.5rem;
+  }
+  .updateStatus p {
+    font-size: 18px;
+  }
+  .updateStatus button {
+    font-size: 18px;
+  }
 }
