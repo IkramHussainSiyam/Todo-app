@@ -56,17 +56,6 @@ body {
   max-width: 1300px;
   margin: 150px auto;
 }
-@media screen and (max-width: 576px) {
-  .container {
-    max-width: auto;
-    padding-inline: 2rem;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .container {
-    max-width: 800px;
-  }
-}
 .todoApp {
   max-width: 480px;
   margin: 0 auto;
@@ -166,4 +155,22 @@ body {
 .checkbox.checked + .task {
   color: rgb(92, 92, 92);
   text-decoration: line-through;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 800px;
+    margin: 80px auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    margin: 30px auto;
+    max-width: auto;
+    padding-inline: 1rem;
+  }
+  .todoApp {
+    max-width: auto;
+  }
 }
