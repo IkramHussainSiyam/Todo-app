@@ -5,9 +5,9 @@ const deleteAll = document.querySelector("#deleteAll");
 const totalTodo = document.querySelector("#totalTodo");
 const countCompleted = document.querySelector("#countCompleted");
 
-addTodo.addEventListener("click", function () {
+function addTask() {
   let taskInputValue = taskInput.value;
-  if (taskInputValue === "") {
+  if (taskInputValue.trim() === "") {
     taskInputValue = "";
   } else {
     let li = document.createElement("li");
@@ -25,6 +25,14 @@ addTodo.addEventListener("click", function () {
   taskInput.value = "";
   totalTodo.innerText = todolist.childElementCount;
   updateCompletedCount();
+}
+addTodo.addEventListener("click", function () {
+  addTask();
+});
+taskInput.addEventListener("keyup", function (e) {
+  if (e.key === "Enter") {
+    addTask();
+  }
 });
 
 todolist.addEventListener("click", function (e) {
