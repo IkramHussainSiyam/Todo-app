@@ -157,7 +157,28 @@ body {
   color: rgb(92, 92, 92);
   text-decoration: line-through;
 }
-
+.updateStatus {
+  margin-top: 40px;
+  padding-inline: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.updateStatus p {
+  color: #586570;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.updateStatus button {
+  padding: 3px 10px;
+  border-radius: 3px;
+  text-transform: capitalize;
+  background: #586570;
+  color: white;
+}
+.updateStatus button:hover {
+  background: #798896;
+}
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 800px;
