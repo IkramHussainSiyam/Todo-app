@@ -19,13 +19,14 @@ addTodo.addEventListener("click", function () {
   `;
     todolist.appendChild(li);
   }
-
   taskInput.value = "";
 });
 
 todolist.addEventListener("click", function (e) {
   if (e.target.className.includes("todoDone")) {
     e.target.parentElement.classList.toggle("checked");
+  } else if (e.target.className.includes("task")) {
+    e.target.previousElementSibling.classList.toggle("checked");
   } else if (e.target.className.includes("deleteTodo")) {
     e.target.parentElement.remove();
   }

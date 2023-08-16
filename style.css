@@ -50,7 +50,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #e3f2fd;
+  background-color: #fff;
 }
 .container {
   max-width: 1300px;
@@ -59,15 +59,16 @@ body {
 .todoApp {
   max-width: 480px;
   margin: 0 auto;
-  background: white;
+  background: #f2f3f5;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 .todoApp h1 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 2rem;
+  color: #586570;
 }
 .inputField {
   position: relative;
@@ -85,7 +86,7 @@ body {
   outline: none;
 }
 .inputField input:focus {
-  border: 1px solid slateblue;
+  border: 1px solid #99a6b1;
 }
 .inputField #addTodo {
   position: absolute;
@@ -99,13 +100,13 @@ body {
   height: 45px;
   display: grid;
   place-items: center;
-  background-color: slateblue;
+  background-color: #586570;
   border-radius: 5px;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
 }
 .inputField #addTodo:hover {
-  background-color: rgb(154, 139, 255);
+  background-color: #778592;
 }
 .todolist {
   height: 350px;
@@ -124,7 +125,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background: rgb(242, 240, 255);
+  background: #fff;
   padding: 15px;
   border-radius: 5px;
   gap: 0.8rem;
@@ -150,7 +151,7 @@ body {
 }
 .todolist .task {
   user-select: none;
-  color: rgb(85, 70, 185);
+  color: #000000b6;
 }
 .checkbox.checked + .task {
   color: rgb(92, 92, 92);
